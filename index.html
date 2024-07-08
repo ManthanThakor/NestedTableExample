@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nested Table Example</title>
+<style>
+    /* Basic table styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    /* Nested table styling */
+    .nested-table {
+        border-collapse: collapse;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .nested-table th, .nested-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    .nested-table th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Topic</th>
+            <th>Description</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Main Topic 1</td>
+            <td>Description of Main Topic 1</td>
+            <td>Details of Main Topic 1</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table class="nested-table">
+                    <thead>
+                        <tr>
+                            <th>Subtopic 1</th>
+                            <th>Subtopic 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Details of Subtopic 1</td>
+                            <td>Details of Subtopic 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Description of Main Topic 1 (continued)</td>
+            <td>Details of Main Topic 1 (continued)</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Main Topic 2</td>
+            <td>Description of Main Topic 2</td>
+            <td>Details of Main Topic 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table class="nested-table">
+                    <thead>
+                        <tr>
+                            <th>Subtopic A</th>
+                            <th>Subtopic B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Details of Subtopic A</td>
+                            <td>Details of Subtopic B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
 
