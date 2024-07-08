@@ -18,4 +18,4 @@ This example is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-© [Your Name] | [GitHub Repository Link]
+© Manthan Thakor | [GitHub Repository Link](https://github.com/ManthanThakor/NestedTableExample)
